@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2D2D2D;
+    /* text-align: center; */
+}
+/* HEADER */
+/* =============================== */
+.header{
+    position: relative;
+    background: rgb(7, 62, 103, 0.82);
+    height: 850px;
+}
+.header_background_image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    max-height: 850px;
+}
+.header_profile{
+    /* background-color: rgba(255, 99, 71, 0.39); */
+    padding-top: 13%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.header_profile img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 810px;
+    max-height: 310px;
+    border-radius: 80%;
+    padding: 10px;
+    border: solid;
+    border-width: 5px;
+    border-color: white;
+    transition: transform .2s;
+}
+.header_profile img:hover{
+    transform: scale(1.09);
+    border-color: aqua;
+}
+.profile_description{
+    margin: 20px;
+    color: white;
+}
+.name{
+    font-size: 40px; 
+    padding-bottom: 5px;
+    transition: transform .2s;
+}
+.name:hover{transform: scale(1.05);}
+.major{
+    font-size: 22px;
+    padding-bottom: 5px;
+    transition: transform .2s;
+}
+.major:hover{transform: scale(1.05);}
+.university{
+    font-size: 22px;
+    transition: transform .2s;
+}
+.university:hover{transform: scale(1.05);}
+.cv_button a{
+    text-decoration: none;
+    color: white;
+    /* background-color: tomato; */
+    padding: 12px;
+}
+.cv_button{
+    margin-top: 50px;
+    padding: 12px;
+    font-size: 23px;
+    border: solid;
+    border-color: white;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: transform .2s;
+}
+.cv_button:hover{
+    transform: scale(1.2);
+    color: aqua;
+    border-color: aqua;
+}
+
+
+/* ABOUT_ME */
+/* =============================== */
+.about_me{
+    color: white;
+    text-align: center;
+    padding-bottom: 8%;
+}
+.sub_title1{
+    /* background-color: tomato; */
+    margin: 1% 3% 0% 3%;
+    padding: 5% 0% 3% 0%;
+    border-top: solid;
+    border-color: white;
+    border-width: 7px;
+    font-size: 40px;
+}
+.content1{
+    font-size: 20px;
+}
+
+/* PORTOFOLIO */
+/* =============================== */
+.portofolio{
+    color: #2D2D2D;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1% 0% 1% 0%;
+    
+}
+.sub_title2{
+    /* background-color: tomato; */
+    margin: 0% 3% 0% 3%;
+    padding: 5% 0% 3% 0%;
+    border-top: solid;
+    border-color: #2D2D2D;
+    border-width: 7px;
+    font-size: 40px;
+}
+.projects_container{
+    /* background-color: hotpink; */
+    margin: 0% 3% 5% 3%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.projects_container img{
+    /* background-color: aqua; */
+    display: block;
+    height: 280px;
+    width: 400px;
+    margin: 20px;
+    border-radius: 25px;
+}
+.project{
+    /* background-color: aliceblue; */
+    position: relative;
+    margin: 0% 3% 5% 3%;
+}
+.overlay {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 280px;
+    width: 400px;
+    border-radius: 25px;
+    opacity: 0;
+    transition: .5s ease;
+    /* background-color: #2D2D2D; */
+    background-color: rgb(7, 62, 103, 0.87);
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  
+  .project_desc{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* CONTACT ME */
+/* =============================== */
+  .contact_me{
+    /* background-color: tomato; */
+    color: white;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.contacts_container{
+    padding: 3%;
+}
+.contacts_container img{
+    max-width: 140px;
+    max-height: 140px;
+    padding: 0% 1% 0% 1%;
+    transition: transform .2s;
+}
+.contacts_container img:hover{
+    transform: scale(1.18);
+}
+.footer{
+    background-color: #2D2D2D;
+    /* background-color: tomato; */
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 15px;
+}
