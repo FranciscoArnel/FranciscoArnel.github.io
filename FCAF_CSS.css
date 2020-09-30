@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: #2D2D2D;
+    font-family: sans-serif;
     /* text-align: center; */
 }
 /* HEADER */
@@ -155,7 +156,7 @@ body{
     opacity: 0;
     transition: .5s ease;
     /* background-color: #2D2D2D; */
-    background-color: rgb(7, 62, 103, 0.87);
+    background: linear-gradient(to bottom, #307AB1, rgb(7, 62, 103, 0.87), #2D2D2D);
   }
   
   .project:hover .overlay {
@@ -164,7 +165,7 @@ body{
   
   .project_desc{
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
