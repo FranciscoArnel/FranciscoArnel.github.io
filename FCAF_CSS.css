@@ -54,14 +54,14 @@ body{
 .major{
     font-size: 22px;
     padding-bottom: 5px;
-    transition: transform .2s;
+    /* transition: transform .2s; */
 }
-.major:hover{transform: scale(1.05);}
+/* .major:hover{transform: scale(1.05);} */
 .university{
     font-size: 22px;
-    transition: transform .2s;
+    /* transition: transform .2s; */
 }
-.university:hover{transform: scale(1.05);}
+/* .university:hover{transform: scale(1.05);} */
 .cv_button a{
     text-decoration: none;
     color: white;
@@ -125,7 +125,7 @@ body{
 }
 .projects_container{
     /* background-color: hotpink; */
-    margin: 0% 3% 5% 3%;
+    margin: 1% 3% 5% 3%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -136,12 +136,17 @@ body{
     height: 280px;
     width: 400px;
     margin: 20px;
+    border: solid;
+    border-color: #2D2D2D;
+    border-width: 7px;
+    padding: 5px;
     border-radius: 25px;
 }
 .project{
     /* background-color: aliceblue; */
     position: relative;
     margin: 0% 3% 5% 3%;
+    transition: transform .2s;
 }
 .overlay {
     margin: 20px;
@@ -154,26 +159,38 @@ body{
     width: 400px;
     border-radius: 25px;
     opacity: 0;
-    transition: .5s ease;
+    transition: .4s ease;
     /* background-color: #2D2D2D; */
     background: linear-gradient(to bottom, #307AB1, rgb(7, 62, 103, 0.87), #2D2D2D);
   }
-  
-  .project:hover .overlay {
+.project:hover .overlay {
     opacity: 1;
-  }
+}
+.project:hover {
+    transform: scale(1.05);
+}
   
-  .project_desc{
+.project_name{
+    /* background-color: salmon; */
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 85%;
+    height: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+.project_desc{
+    border-top: solid;
+    border-color: white;
+    padding-top: 8px;
+    border-width: 3px;
+    font-size: 18px;
+}
 
 /* CONTACT ME */
 /* =============================== */
