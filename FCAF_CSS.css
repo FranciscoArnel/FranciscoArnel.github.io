@@ -9,14 +9,20 @@ body{
 /* =============================== */
 .header{
     position: relative;
-    background: rgb(7, 62, 103, 0.82);
-    height: 850px;
+    /* background-image:linear-gradient(rgb(7, 62, 103, 0.9), rgb(7, 62, 103, 0.6)); */
+    background-color: rgb(7, 62, 103, 0.84);
+    width: 100%;
+    height: 100%;
+    border-bottom: black;
+    border-style: solid;
+    border-width: 5px;
 }
 .header_background_image{
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -1;
-    max-height: 850px;
+    /* max-height: 850px; */
 }
 .header_profile{
     /* background-color: rgba(255, 99, 71, 0.39); */
@@ -89,12 +95,24 @@ body{
 /* =============================== */
 .about_me{
     color: white;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.6), rgba(8, 8, 8, 0.65), rgba(8, 8, 8, 0.7), rgba(8, 8, 8, 0.86), rgba(8, 8, 8, 1));
     text-align: center;
-    padding-bottom: 8%;
+    padding-bottom: 12%;
+    position: relative;
+    padding-top: 1%;
+}
+.about_background_image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    margin-top: -18px;
 }
 .sub_title1{
     /* background-color: tomato; */
-    margin: 1% 3% 0% 3%;
+    margin: 2% 3% 0% 3%;
+    margin: 0% 3% 0% 3%;
     padding: 5% 0% 3% 0%;
     border-top: solid;
     border-color: white;
@@ -103,6 +121,62 @@ body{
 }
 .content1{
     font-size: 20px;
+}
+
+/* SKILLS */
+/* =============================== */
+.skills{
+    color: white;
+    text-align: center;
+    background-color: rgba(8, 8, 8, 1);
+    position: relative;
+    /* margin: 0; */
+    padding-bottom: 35%;
+    padding-top: 1%;
+}
+.sub_title_skills{
+    padding: 3% 0% 3% 0%;
+    margin: 0% 20% 0% 20%;
+    font-size: 40px;
+    border-top: solid;
+    border-color: rgb(59, 59, 59);
+    border-width: 7px;
+}
+.skills_wrapper{
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+}
+.wrapper1{
+    float: left;
+    /* background-color: aqua; */
+    width: 48%;
+    padding-right: 25px;
+}
+.wrapper2{
+    float: right;
+    /* background-color: tomato; */
+    width: 50%;
+    padding-left: 25px;
+}
+.skill{
+    margin-bottom: 40px;
+}
+.skill_name{
+    float: left;
+    font-size: 25px;
+    margin-right: 30px;
+    /* background-color: wheat; */
+}
+.progress_bar{
+    padding-top: 9px;
+    /* background-color: purple; */
+    width: 100%;
+}
+.progress{
+    width: 55%;
+    float: right;
+    /* background-color: red; */
 }
 
 /* PORTOFOLIO */
@@ -135,7 +209,7 @@ body{
     display: block;
     height: 280px;
     width: 400px;
-    margin: 20px;
+    /* margin: 20px; */
     border: solid;
     border-color: #2D2D2D;
     border-width: 7px;
@@ -143,23 +217,25 @@ body{
     border-radius: 25px;
 }
 .project{
-    /* background-color: aliceblue; */
+    /* background-color: tomato; */
     position: relative;
-    margin: 0% 3% 5% 3%;
+    padding: 20px;
+    /* margin: 0% 3% 5% 3%; */
     transition: transform .2s;
 }
 .overlay {
-    margin: 20px;
     position: absolute;
+    margin: 31px;
+    max-width: 380px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 280px;
-    width: 400px;
-    border-radius: 25px;
+    border-radius: 18px;
     opacity: 0;
     transition: .4s ease;
+    /* background: chartreuse; */
+    /* margin: 10px, 10px, 10px, 10px; */
     /* background-color: #2D2D2D; */
     background: linear-gradient(to bottom, #307AB1, rgb(7, 62, 103, 0.87), #2D2D2D);
   }
@@ -184,6 +260,9 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.cgv_project_name{
+    font-size: 25px;
+}
 .project_desc{
     border-top: solid;
     border-color: white;
@@ -194,11 +273,12 @@ body{
 
 /* CONTACT ME */
 /* =============================== */
-  .contact_me{
-    /* background-color: tomato; */
+.contact_me{
+    background-color: #2D2D2D;
     color: white;
     text-align: center;
     padding-bottom: 5%;
+    padding-top: 1%;
 }
 .contacts_container{
     padding: 3%;
@@ -209,11 +289,14 @@ body{
     padding: 0% 1% 0% 1%;
     transition: transform .2s;
 }
+.contacts_container a{
+    text-decoration: none;
+}
 .contacts_container img:hover{
     transform: scale(1.18);
 }
 .footer{
-    background-color: #2D2D2D;
+    /* background-color: #2D2D2D; */
     /* background-color: tomato; */
     text-align: center;
     font-size: 15px;
