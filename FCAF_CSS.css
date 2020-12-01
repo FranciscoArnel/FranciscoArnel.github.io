@@ -119,8 +119,8 @@ body{
     margin: 0% 3% 0% 3%;
     padding: 5% 0% 3% 0%;
     border-top: solid;
-    /* border-color: white; */
-    border-color: #2D2D2D;
+    border-color: white;
+    /* border-color: #2D2D2D; */
     border-width: 7px;
     font-size: 40px;
 }
